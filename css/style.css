@@ -1,8 +1,14 @@
-body{
-    cursor: url(../imgs/cursor\ \(1\).cur), default ;
+body {
+    margin: 0;
+    cursor: url(../imgs/cursor\ \(1\).cur), default;
 }
 
-.wrapper{
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.wrapper {
     max-width: 1170px;
     margin: 0 auto;
 }
@@ -10,7 +16,8 @@ body{
 .flex {
     display: flex;
     justify-content: space-between;
-
+    column-gap: 27px;
+    align-items: center;
 }
 
 .fb {
@@ -19,42 +26,50 @@ body{
     height: 30px;
     background-image: url(../imgs/fb.png);
     background-repeat: no-repeat;
+    border-radius: 50%;
 }
 
-.tw{
+.tw {
     display: inline-block;
     width: 30px;
     height: 30px;
     background-image: url(../imgs/tw.png);
     background-repeat: no-repeat;
+    border-radius: 50%;
 }
 
-.sk{
+.sk {
     display: inline-block;
     width: 30px;
     height: 30px;
     background-image: url(../imgs/sk.png);
     background-repeat: no-repeat;
     color: #ffffff;
+    border-radius: 50%;
 }
 
-.pi{
+.pi {
     display: inline-block;
+    width: 30px;
     height: 30px;
-    background-image: url(../imgs/Googlemap\.png);
-    background-repeat: no-repeat;
     color: #ffffff;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-left: 20px;
 }
 
-.gm{
+.gm {
     display: inline-block;
+    width: 30px;
     height: 30px;
-    background-image: url(../imgs/Phone.png);
-    background-repeat: no-repeat;
     color: #ffffff;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
-.adv h3{
+.adv h3 {
     font-size: 18px;
     color: #151517;
     font-weight: 700;
@@ -62,7 +77,20 @@ body{
     text-align: center;
 }
 
-.adv{
+.adv {
+    padding-top: 60px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #878787;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.adv p {
+    width: 260px;
+    height: 64px;
     font-size: 14px;
     line-height: 21px;
     color: #878787;
@@ -71,46 +99,72 @@ body{
     text-align: center;
 }
 
-.lowpricse{
-
-}
-
-.like{
-
-}
-
-.like :hover{
+.dav {
+    padding: 40px 10px;
     border-radius: 5px;
-    background-color: #ffffff;
-    border: 2px solid #f5ed08;
+    border: 2px solid transparent;
 }
 
-.bigcar{
-    
-}
-
-.working24-7{
-  
+.dav:hover {
+    border-color: #f5ed08;
 }
 
 .top-menu {
     background-color: black;
     color: #ffffff;
+    font-family: "Roboto";
+    padding: 10px 0;
+}
+
+.top-menu a {
+    color: #f1f1f3;
+    text-decoration: none;
 }
 
 .menu {
     text-align: center;
     color: black;
     background-color: #ffffff;
-    justify-content: space-between;
-    display: flex;
+}
+
+.menu a {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #151517;
+    font-weight: 700;
+    font-family: "Roboto";
+    text-align: right;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline yellow;
+
 }
 
 .now-center {
     color: #ffffff;
     text-align: center;
-    background-image: url(../imgs/Rectangle\ 5.png);
+    background-image: url(../imgs/fruit-sup.jpg);
     padding: 135px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.now-center p {
+    margin-bottom: 45px;
+}
+
+.now-center h3 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
 }
 
 .now {
@@ -120,8 +174,6 @@ body{
     border-radius: 10px;
     text-decoration: none;
     border-radius: 5px;
-    width: 220px;
-    height: 60px;
     border-radius: 5px;
     background-color: #f5ed08;
     box-sizing: border-box;
@@ -132,12 +184,12 @@ body{
     font-weight: 700;
     font-family: "Roboto";
     text-align: center;
+    align-items: center;
 }
 
-.menu li {
-    margin: 20px;
-    text-align: center;
-    display: inline-block;
+.now:hover {
+    border: #f5ed08;
+    border-radius: 220px;
 }
 
 .center {
@@ -150,29 +202,53 @@ body{
     background-color: #f1f1f3;
 }
 
+.now-end h2 {
+    font-size: 36px;
+    line-height: 46px;
+    color: #151517;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
+}
+
 .now-end p {
+    height: 88px;
+    font-size: 16px;
+    line-height: 24px;
     color: #878787;
+    font-weight: 300;
     font-family: "Roboto";
+    text-align: center;
 }
 
 .fruit {
-    background-image: url(../imgs/Rectangle\ 11.png);
-    background-position: 0 -275px;
-    height: 262px;
+    background-image: url(../imgs/bgslider.jpg);
+    background-position: center;
     background-color: #020213;
     text-align: center;
     color: #ffffff;
+    padding: 60px 0;
+    background-size: cover;
+}
+
+.fruit .wrapper {
+    max-width: 830px;
+}
+
+.fruit p {
+    height: 88px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: "Roboto";
+    text-align: center;
 }
 
 .fr {
-    color: black;
     padding: 25px;
     display: inline-block;
-    border-radius: 10px;
     text-decoration: none;
-    border-radius: 5px;
-     width: 220px;
-    height: 70px;
     border-radius: 5px;
     background-color: #f5ed08;
     box-sizing: border-box;
@@ -183,30 +259,28 @@ body{
     font-weight: 700;
     font-family: "Roboto";
 }
+
+.fr:hover {
+    border: #f5ed08;
+    border-radius: 220px;
+}
+
 .top-button {
     text-align: center;
     background-color: red;
 }
 
 .low-menu {
-    padding-left: 650px;
     border-radius: 5px;
     text-align: center;
-
+    padding: 50px 0 40px 0;
 }
 
-.low-menu ul li{
-    display: inline-block;
-    border-radius: 5px;
-    background-color: #f5ed08;
-    width: 220px;
-}
-
-.low-menu {
-    padding: 100px;
-}
-
+.low-menu a,
 .pb {
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
     font-size: 14px;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -216,12 +290,54 @@ body{
     text-align: center;
 }
 
+.low-menu ul li,
+.pb {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 220px;
+    border: 2px solid #f5ed08;
+}
+
+.low-menu ul li:hover,
+.pb:hover {
+    background-color: #f5ed08;
+
+}
+
+.low-menu h2 {
+    font-size: 36px;
+    line-height: 46px;
+    color: #151517;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    text-align: center;
+}
+
+.low-menu ul {
+    display: flex;
+    column-gap: 9px;
+    justify-content: center;
+}
+
+.pb {
+    width: 170px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    border: 2px solid #f5ed08;
+    color: #000;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+
 .dishes {
     display: flex;
+    margin-bottom: 40px;
 }
 
 .dish {
-    min-height: 310px;
+    min-height: 300px;
     width: 20%;
     background-repeat: no-repeat;
 }
@@ -254,16 +370,46 @@ body{
     color: #878787;
     font-weight: 300;
     font-family: "Roboto";
-    text-align: center; 
+    text-align: center;
+    padding: 20px 0 60px;
+}
+
+.end h2 {
+    font-size: 36px;
+    line-height: 46px;
+    color: #151517;
+    font-family: "Roboto Slab";
 }
 
 .end p {
-    width: 727px;
     margin: 0 auto;
+    background-color: #ffffff;
+    padding: 35px 30px;
+    margin-bottom: 25px;
+    max-width: 771px;
+    position: relative;
+}
+
+.end p:after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    background-color:rgb(255, 255, 255);
+    transform: rotate(45deg);
+    position: absolute;
+    bottom: -5px;
+    left: calc(50% - 5px);
 }
 
 .end b {
     display: inline-block;
+}
+
+.end h3 {
+    color: #000;
+    margin-bottom: 10px;
+    font-family: "Roboto Slab";
 }
 
 .woman-2 {
@@ -274,11 +420,12 @@ body{
     background-image: url(../imgs/Woman-2.png);
 }
 
-.man{
+.man {
     width: 70px;
     height: 70px;
     border-radius: 35px;
     background-color: #ffffff;
+    margin: 0 10px;
     background-image: url(../imgs/Man.png);
 }
 
@@ -290,18 +437,95 @@ body{
     background-image: url(../imgs/Woman.png);
 }
 
+.end h6 {
+    margin: 0;
+}
+
 .end-menu {
     background-color: #000000;
-    display: flex;
-    justify-content: space-between;
     color: #ffffff;
+    padding: 50px 0 62px;
 }
 
-.end-menu a {
-    color: #ffffff;
+.la {
+    opacity: 0.200;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #151517;
+    border: 1px solid #ffffff;
+    margin-bottom: 30px;
 }
 
-.map{
+.cp a {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.end-menu .flex {
+    align-items: start;
+}
+
+.end-menu a:hover {
+    color: #f5ed08;
+}
+
+.end-menu h2 {
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin-top: 0;
+}
+
+.end-menu h3 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f1f1f3;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.socials a:hover {
+    transform: scale(1.2);
+    background-size: cover;
+}
+
+.circles b {
+    height: 8px;
+    width: 8px;
+    background-color: #878787;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.circles b:hover {
+    background-color: #f5ed08;
+}
+
+.copy {
+    color: #878787;
+}
+
+.conts img {
+    margin-right: 15px;
+} 
+
+.end-menu p {
+    font-size: 13px;
+    line-height: 24px;
+    color: #f1f1f3;
+    font-weight: 300;
+    font-family: "Roboto";
+}
+
+.map {
+    position: relative;
     height: 500px;
     background-color: #000000;
     background-image: url(../imgs/Map-city.jpg);
@@ -309,13 +533,46 @@ body{
     background-size: cover;
 }
 
-.map-manu{
-    height: 170px;
+.map-manu {
+    position: absolute;
     border-radius: 8px;
     background-color: #151517;
+    display: inline-block;
+    padding: 35px;
+    left: calc(50% - 140px);
+    top: 140px;
 }
 
-.map-manu a{
+.map-manu::after {
+    content: "";
+    height: 8px;
+    width: 8px;
+    display: inline-block;
+    transform: rotate(45deg);
+    background-color: #151517;
+    position: absolute;
+    bottom: -5px;
+    left: calc(50% - 5px);
+}
+
+.map-manu a:hover {
+    color: #878787;
+}
+
+.map-manu a {
+    font-size: 14px;
     color: #f5ed08;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-left: 20px;
 }
 
+.conts a {
+    color: #f1f1f3;
+}
+
+.email h3 {
+    font-family: "Roboto Slab";
+    color: #f1f1f3;
+    margin-bottom: 30px;
+}
